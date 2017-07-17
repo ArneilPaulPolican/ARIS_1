@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.75, 20.125" name="ArisDB">
+  <DataContextMoniker Name="/ArisDBDataContext" />
+  <nestedChildShapes>
+    <classShape Id="edca8d76-68c2-4c3d-a67b-b63152779bdf" absoluteBounds="6.75, 15, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ArisDBDataContext/AspNetRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f44365a-e544-4374-84f1-00598210938a" absoluteBounds="6.765, 15.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a8933efc-928d-4461-9519-e53cd7bda484" absoluteBounds="9, 0.75, 2, 1.9631982421875">
+      <DataClassMoniker Name="/ArisDBDataContext/TrnStudentLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f2542aad-0799-477c-bb9e-e6fe6ee10e19" absoluteBounds="9.015, 1.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="71c9069b-ac46-43a2-8613-6935c237152f" absoluteBounds="9.5, 14.75, 2, 1.5785953776041684">
+      <DataClassMoniker Name="/ArisDBDataContext/AspNetUserClaim" />
+      <nestedChildShapes>
+        <elementListCompartment Id="aafdaeb4-585f-4867-a3ad-d1522eca0a38" absoluteBounds="9.515, 15.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="07f510c7-b4cf-4b5e-af88-65f3680e2a11" absoluteBounds="9.5, 12.625, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/ArisDBDataContext/AspNetUserLogin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="514d9b81-6216-4652-be22-4e547c12cfa0" absoluteBounds="9.515, 13.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="006af435-21f2-46e6-8c14-33e26cb0a481" absoluteBounds="9.5, 10, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ArisDBDataContext/AspNetUserRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75b1a190-a03d-4b66-b94e-74b37add7ff7" absoluteBounds="9.515, 10.46, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="02f0973c-10e5-499c-bb4b-03bc3ac95f59" absoluteBounds="6.75, 11, 2, 3.1170068359374987">
+      <DataClassMoniker Name="/ArisDBDataContext/AspNetUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9f71d7e4-655c-4b55-9700-62cc8f35b993" absoluteBounds="6.765, 11.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="41b89f18-c308-4501-bcdf-f270dd7b79fb" absoluteBounds="6.25, 4, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/ArisDBDataContext/MstBatching" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89e7aa9c-8e38-405d-ac98-d4279c0ab4ee" absoluteBounds="6.265, 4.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="19c1ddb7-1c5b-44a2-984f-b2a249a47041" absoluteBounds="3.5, 4, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ArisDBDataContext/MstCourse" />
+      <nestedChildShapes>
+        <elementListCompartment Id="34d50225-34df-452c-8c00-44c37d0d56be" absoluteBounds="3.515, 4.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d8fcb641-70ed-41ad-a33e-6b0315c92db3" absoluteBounds="0.75, 4, 2, 1.3862939453124996">
+      <DataClassMoniker Name="/ArisDBDataContext/MstDepartment" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3a9b8a8b-df08-43c2-9f53-17e8e009d390" absoluteBounds="0.765, 4.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a7207fb1-4088-46e7-98ee-1465f5894c94" absoluteBounds="6.25, 17.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ArisDBDataContext/MstEmployee" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1832f696-9dd1-4288-a50a-0d4514a6d40a" absoluteBounds="6.265, 18.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c4e02c7c-1ef0-4e7e-810f-ba782618fa75" absoluteBounds="9, 6.875, 2, 1.9631982421875014">
+      <DataClassMoniker Name="/ArisDBDataContext/MstEmployeeLine" />
+      <nestedChildShapes>
+        <elementListCompartment Id="679fa40b-622a-42e7-a2ea-c8f60de1bbe5" absoluteBounds="9.015, 7.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="33d0da63-9fa2-45ed-a87d-2ebbc453bc40" absoluteBounds="0.75, 6.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/ArisDBDataContext/MstFather" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ab09c7f-4886-446c-9719-21f54f4a2846" absoluteBounds="0.765, 7.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94736129-7bd2-4df6-acc6-5c6be6ab1c97" absoluteBounds="0.75, 9.875, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/ArisDBDataContext/MstMother" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8c313398-2988-49ce-82da-13f726896fcd" absoluteBounds="0.765, 10.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="636acb4b-8fbb-4378-9a65-2ee821c08a35" absoluteBounds="8.75, 4.375, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/ArisDBDataContext/MstSchedule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2f06bb65-6936-4ee2-9f63-17d6dd41b011" absoluteBounds="8.765, 4.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c90e69b8-2700-42fe-a7ac-56cc695b2dea" absoluteBounds="3.5, 7.875, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/ArisDBDataContext/MstStudent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8313db1e-efdd-476e-9d26-5e085259af49" absoluteBounds="3.515, 8.335, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="94b535af-c5a1-491a-817e-d7e4c40b560b" absoluteBounds="6.25, 7, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ArisDBDataContext/MstSubject" />
+      <nestedChildShapes>
+        <elementListCompartment Id="50b6f6f1-4d51-44eb-9e95-10d03873e567" absoluteBounds="6.265, 7.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9a9dbba1-170b-4a55-a05c-263b2277b60e" absoluteBounds="6.25, 0.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/ArisDBDataContext/TrnStudent" />
+      <nestedChildShapes>
+        <elementListCompartment Id="95f3d967-5526-42ef-b361-fcb9876ea1db" absoluteBounds="6.265, 1.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(8.75 : 15); (9.125 : 14.625); (9.125 : 11.5689925130208); (9.22232443490112 : 11.4716680781197 : JumpStart); (9.34017556509888 : 11.353816947922 : JumpEnd); (9.5 : 11.1939925130208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ArisDBDataContext/AspNetRole/AspNetRole_AspNetUserRole" />
+      <nodes>
+        <classShapeMoniker Id="edca8d76-68c2-4c3d-a67b-b63152779bdf" />
+        <classShapeMoniker Id="006af435-21f2-46e6-8c14-33e26cb0a481" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 14.055467374399); (9.06607443490112 : 14.3715418093002 : JumpStart); (9.18392556509888 : 14.4893929394979 : JumpEnd); (9.22232443490112 : 14.5277918093002 : JumpStart); (9.34017556509888 : 14.6456429394979 : JumpEnd); (9.4375 : 14.742967374399); (9.4375 : 14.6875); (9.5 : 14.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ArisDBDataContext/AspNetUser/AspNetUser_AspNetUserClaim" />
+      <nodes>
+        <classShapeMoniker Id="02f0973c-10e5-499c-bb4b-03bc3ac95f59" />
+        <classShapeMoniker Id="71c9069b-ac46-43a2-8613-6935c237152f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.75 : 13.3181469726562); (9.04166666666667 : 13.3181469726562 : JumpStart); (9.36458333333333 : 13.3181469726562 : JumpEnd); (9.5 : 13.3181469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArisDBDataContext/AspNetUser/AspNetUser_AspNetUserLogin" />
+      <nodes>
+        <classShapeMoniker Id="02f0973c-10e5-499c-bb4b-03bc3ac95f59" />
+        <classShapeMoniker Id="07f510c7-b4cf-4b5e-af88-65f3680e2a11" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.75 : 11); (7.75 : 10.4999995); (9.19791666666667 : 10.4999995 : JumpStart); (9.36458333333333 : 10.4999995 : JumpEnd); (9.5 : 10.4999995)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArisDBDataContext/AspNetUser/AspNetUser_AspNetUserRole" />
+      <nodes>
+        <classShapeMoniker Id="02f0973c-10e5-499c-bb4b-03bc3ac95f59" />
+        <classShapeMoniker Id="006af435-21f2-46e6-8c14-33e26cb0a481" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.69314697265625); (5.79166666666667 : 4.69314697265625 : JumpStart); (5.95833333333333 : 4.69314697265625 : JumpEnd); (6.25 : 4.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArisDBDataContext/MstCourse/MstCourse_MstBatching" />
+      <nodes>
+        <classShapeMoniker Id="19c1ddb7-1c5b-44a2-984f-b2a249a47041" />
+        <classShapeMoniker Id="41b89f18-c308-4501-bcdf-f270dd7b79fb" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.69314697265625); (3.5 : 4.69314697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArisDBDataContext/MstDepartment/MstDepartment_MstCourse" />
+      <nodes>
+        <classShapeMoniker Id="d8fcb641-70ed-41ad-a33e-6b0315c92db3" />
+        <classShapeMoniker Id="19c1ddb7-1c5b-44a2-984f-b2a249a47041" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 18.8277498372396); (9.28125 : 18.8277498372396); (9.28125 : 8.8381982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArisDBDataContext/MstEmployee/MstEmployee_MstEmployeeLine" />
+      <nodes>
+        <classShapeMoniker Id="a7207fb1-4088-46e7-98ee-1465f5894c94" />
+        <classShapeMoniker Id="c4e02c7c-1ef0-4e7e-810f-ba782618fa75" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.48640055338542); (3.5 : 8.48640055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArisDBDataContext/MstFather/MstFather_MstStudent" />
+      <nodes>
+        <classShapeMoniker Id="33d0da63-9fa2-45ed-a87d-2ebbc453bc40" />
+        <classShapeMoniker Id="c90e69b8-2700-42fe-a7ac-56cc695b2dea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 10.5296541341146); (3.5 : 10.5296541341146)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArisDBDataContext/MstMother/MstMother_MstStudent" />
+      <nodes>
+        <classShapeMoniker Id="94736129-7bd2-4df6-acc6-5c6be6ab1c97" />
+        <classShapeMoniker Id="c90e69b8-2700-42fe-a7ac-56cc695b2dea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 7); (7.25 : 5.6362939453125); (8.5 : 5.6362939453125); (8.5 : 1.73159912109375); (9 : 1.73159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArisDBDataContext/MstSubject/MstSubject_TrnStudentLine" />
+      <nodes>
+        <classShapeMoniker Id="94b535af-c5a1-491a-817e-d7e4c40b560b" />
+        <classShapeMoniker Id="a8933efc-928d-4461-9519-e53cd7bda484" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 7.78929768880208); (9 : 7.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArisDBDataContext/MstSubject/MstSubject_MstEmployeeLine" />
+      <nodes>
+        <classShapeMoniker Id="94b535af-c5a1-491a-817e-d7e4c40b560b" />
+        <classShapeMoniker Id="c4e02c7c-1ef0-4e7e-810f-ba782618fa75" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 2.25124796549479); (8.41666666666667 : 2.25124796549479 : JumpStart); (8.58333333333333 : 2.25124796549479 : JumpEnd); (9 : 2.25124796549479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArisDBDataContext/TrnStudent/TrnStudent_TrnStudentLine" />
+      <nodes>
+        <classShapeMoniker Id="9a9dbba1-170b-4a55-a05c-263b2277b60e" />
+        <classShapeMoniker Id="a8933efc-928d-4461-9519-e53cd7bda484" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.5 : 4); (4.5 : 1.76044840494792); (6.25 : 1.76044840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArisDBDataContext/MstCourse/MstCourse_TrnStudent" />
+      <nodes>
+        <classShapeMoniker Id="19c1ddb7-1c5b-44a2-984f-b2a249a47041" />
+        <classShapeMoniker Id="9a9dbba1-170b-4a55-a05c-263b2277b60e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.875); (5.875 : 7.5); (5.875 : 2.23442460742187); (6.25 : 2.23442460742187)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ArisDBDataContext/MstStudent/MstStudent_TrnStudent" />
+      <nodes>
+        <classShapeMoniker Id="c90e69b8-2700-42fe-a7ac-56cc695b2dea" />
+        <classShapeMoniker Id="9a9dbba1-170b-4a55-a05c-263b2277b60e" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

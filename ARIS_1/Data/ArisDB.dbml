@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="ARIS_DB" Class="ArisDBDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=HAR-HAR-PC;Initial Catalog=ARIS_DB;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="DefaultConnection" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.AspNetRoles" Member="AspNetRoles">
+    <Type Name="AspNetRole">
+      <Column Name="Id" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Association Name="AspNetRole_AspNetUserRole" Member="AspNetUserRoles" ThisKey="Id" OtherKey="RoleId" Type="AspNetUserRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrnStudentLine" Member="TrnStudentLines">
+    <Type Name="TrnStudentLine">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TrnID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SubjectID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SchedID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Units" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProfID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="MstSubject_TrnStudentLine" Member="MstSubject" ThisKey="SubjectID" OtherKey="ID" Type="MstSubject" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="TrnStudent_TrnStudentLine" Member="TrnStudent" ThisKey="TrnID" OtherKey="ID" Type="TrnStudent" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetUserClaims" Member="AspNetUserClaims">
+    <Type Name="AspNetUserClaim">
+      <Column Name="Id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(128) NOT NULL" CanBeNull="false" />
+      <Column Name="ClaimType" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="ClaimValue" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Association Name="AspNetUser_AspNetUserClaim" Member="AspNetUser" ThisKey="UserId" OtherKey="Id" Type="AspNetUser" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetUserLogins" Member="AspNetUserLogins">
+    <Type Name="AspNetUserLogin">
+      <Column Name="LoginProvider" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProviderKey" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="AspNetUser_AspNetUserLogin" Member="AspNetUser" ThisKey="UserId" OtherKey="Id" Type="AspNetUser" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetUserRoles" Member="AspNetUserRoles">
+    <Type Name="AspNetUserRole">
+      <Column Name="UserId" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RoleId" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Association Name="AspNetRole_AspNetUserRole" Member="AspNetRole" ThisKey="RoleId" OtherKey="Id" Type="AspNetRole" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="AspNetUser_AspNetUserRole" Member="AspNetUser" ThisKey="UserId" OtherKey="Id" Type="AspNetUser" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AspNetUsers" Member="AspNetUsers">
+    <Type Name="AspNetUser">
+      <Column Name="Id" Type="System.String" DbType="NVarChar(128) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Email" Type="System.String" DbType="NVarChar(256)" CanBeNull="true" />
+      <Column Name="EmailConfirmed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="PasswordHash" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="SecurityStamp" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PhoneNumber" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="PhoneNumberConfirmed" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="TwoFactorEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="LockoutEndDateUtc" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LockoutEnabled" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
+      <Column Name="AccessFailedCount" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="UserName" Type="System.String" DbType="NVarChar(256) NOT NULL" CanBeNull="false" />
+      <Association Name="AspNetUser_AspNetUserClaim" Member="AspNetUserClaims" ThisKey="Id" OtherKey="UserId" Type="AspNetUserClaim" />
+      <Association Name="AspNetUser_AspNetUserLogin" Member="AspNetUserLogins" ThisKey="Id" OtherKey="UserId" Type="AspNetUserLogin" />
+      <Association Name="AspNetUser_AspNetUserRole" Member="AspNetUserRoles" ThisKey="Id" OtherKey="UserId" Type="AspNetUserRole" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MstBatching" Member="MstBatchings">
+    <Type Name="MstBatching">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="BatchCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="CourseID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="MstCourse_MstBatching" Member="MstCourse" ThisKey="CourseID" OtherKey="ID" Type="MstCourse" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MstCourse" Member="MstCourses">
+    <Type Name="MstCourse">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CourseCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Course" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="DepID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="MstCourse_MstBatching" Member="MstBatchings" ThisKey="ID" OtherKey="CourseID" Type="MstBatching" />
+      <Association Name="MstCourse_TrnStudent" Member="TrnStudents" ThisKey="ID" OtherKey="CourseID" Type="TrnStudent" />
+      <Association Name="MstDepartment_MstCourse" Member="MstDepartment" ThisKey="DepID" OtherKey="ID" Type="MstDepartment" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MstDepartment" Member="MstDepartments">
+    <Type Name="MstDepartment">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DepCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Department" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="MstDepartment_MstCourse" Member="MstCourses" ThisKey="ID" OtherKey="DepID" Type="MstCourse" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MstEmployee" Member="MstEmployees">
+    <Type Name="MstEmployee">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Fname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Mname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="PosID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DepId" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="MstEmployee_MstEmployeeLine" Member="MstEmployeeLines" ThisKey="ID" OtherKey="EmpID" Type="MstEmployeeLine" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MstEmployeeLine" Member="MstEmployeeLines">
+    <Type Name="MstEmployeeLine">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EmpID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="SubjectID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="BatchID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SchedID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RoomID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="MstEmployee_MstEmployeeLine" Member="MstEmployee" ThisKey="EmpID" OtherKey="ID" Type="MstEmployee" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="MstSubject_MstEmployeeLine" Member="MstSubject" ThisKey="SubjectID" OtherKey="ID" Type="MstSubject" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MstFather" Member="MstFathers">
+    <Type Name="MstFather">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FName" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Mname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Occupation" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactInfo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Particulars" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="MstFather_MstStudent" Member="MstStudents" ThisKey="ID" OtherKey="FatherID" Type="MstStudent" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MstMother" Member="MstMothers">
+    <Type Name="MstMother">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Fname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Mname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Occupation" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="ContactInfo" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Particulars" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Association Name="MstMother_MstStudent" Member="MstStudents" ThisKey="ID" OtherKey="MotherID" Type="MstStudent" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MstSchedule" Member="MstSchedules">
+    <Type Name="MstSchedule">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="TimeIn" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+      <Column Name="TimeOut" Type="System.TimeSpan" DbType="Time" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MstStudent" Member="MstStudents">
+    <Type Name="MstStudent">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Fname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Mname" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Lname" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Age" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="NVarChar(10)" CanBeNull="true" />
+      <Column Name="Religion" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Citizinship" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="BirthDate" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="BirthPlace" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="MotherID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FatherID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="MstStudent_TrnStudent" Member="TrnStudents" ThisKey="ID" OtherKey="StudID" Type="TrnStudent" />
+      <Association Name="MstFather_MstStudent" Member="MstFather" ThisKey="FatherID" OtherKey="ID" Type="MstFather" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="MstMother_MstStudent" Member="MstMother" ThisKey="MotherID" OtherKey="ID" Type="MstMother" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MstSubject" Member="MstSubjects">
+    <Type Name="MstSubject">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="SubCode" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="Subject" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="AmountPerUnit" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="MstSubject_TrnStudentLine" Member="TrnStudentLines" ThisKey="ID" OtherKey="SubjectID" Type="TrnStudentLine" />
+      <Association Name="MstSubject_MstEmployeeLine" Member="MstEmployeeLines" ThisKey="ID" OtherKey="SubjectID" Type="MstEmployeeLine" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TrnStudent" Member="TrnStudents">
+    <Type Name="TrnStudent">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="StudID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TrnNumber" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="YrLevel" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CourseID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="TrnStudent_TrnStudentLine" Member="TrnStudentLines" ThisKey="ID" OtherKey="TrnID" Type="TrnStudentLine" />
+      <Association Name="MstCourse_TrnStudent" Member="MstCourse" ThisKey="CourseID" OtherKey="ID" Type="MstCourse" IsForeignKey="true" DeleteRule="CASCADE" />
+      <Association Name="MstStudent_TrnStudent" Member="MstStudent" ThisKey="StudID" OtherKey="ID" Type="MstStudent" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+</Database>

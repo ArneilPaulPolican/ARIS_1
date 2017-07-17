@@ -1,0 +1,44 @@
+<!--Modal Add And Edit-->
+            <div>
+                <div class="modal fade" id="AddEditModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!--Modal Content-->
+                        <div class="modal-content">
+                            
+                            <div class="modal-body">
+                                <form class="form-horizontal" id="add-form">
+                                    <label>First Name: </label>
+                                    <input type="text" class="form-control" id="Fname" />
+
+                                    <label>Midle Name: </label>
+                                    <input type="text" class="form-control" id="Mname" />
+
+                                    <label>Last Name: </label>
+                                    <input type="text" class="form-control" id="Lname" />
+
+                                    <label>Age: </label>
+                                    <input type="text" class="form-control" id="Age" />
+
+                                    <label>Gender: </label>
+                                    <input type="text" class="form-control" id="Gender" />
+
+                                    <label>Religion: </label>
+                                    <input type="text" class="form-control" id="Religion" />
+
+                                    <label>Citizinship: </label>
+                                    <input type="text" class="form-control" id="Citizinship" />
+
+                                    <label>BirthDate: </label>
+                                    <input type="date" class="form-control" id="Birthdate" />
+
+                                    <label>Birthplace: </label>
+                                    <input type="text" class="form-control" id="Birthplace" />
+
+                                    <label>Address: </label>
+                                    <input type="text" class="form-control" id="Address" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
